@@ -19,7 +19,7 @@ def get_day_number():
 
 def generate_message():
     day = get_day_number()
-    return f"Day {day} of my challenge 🚀"
+    return f"Day {day} of my asking"
 
 def wait_random_time():
     delay = random.randint(0, 3600)
