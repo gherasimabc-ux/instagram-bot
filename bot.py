@@ -10,7 +10,7 @@ PASSWORD = os.getenv("IG_PASSWORD")
 
 TARGET_USERS = ["carterpcs_"]
 
-START_DATE = datetime(2026, 1, 1)
+START_DATE = datetime(2026, 4, 22)
 
 def get_day_number():
     today = datetime.now()
