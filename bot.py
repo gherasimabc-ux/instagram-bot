@@ -19,8 +19,21 @@ def get_day_number():
 
 def generate_message():
     day = get_day_number()
-    return f"Day {day} of my asking"
 
+    messages = [
+        "for a new camera to help me improve my photography!",
+        "for a new camera to help me improve my photography",
+        "for a new camera",
+        "for a mackbook to edit my photosss",
+        "for a new camera to help me improve my photography :>",
+        "for a macbook for lightroom "
+        
+    ]
+
+    message = messages[(day - 1) % len(messages)]
+
+    return f"Day {day} of asking: {message}"
+    
 def wait_random_time():
     delay = random.randint(0, 3600)
     time.sleep(delay)
